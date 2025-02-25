@@ -1,0 +1,111 @@
+{
+	"openapi": "3.0.0",
+
+	"info": {
+		"title": "FASC2077 API",
+		"description": "Essa API tem como objetivo pegar os dados de uma API externa e salvar num banco local com a finalidade de permitir a manipulação dos dados (create, update, delete) do FASC2077",
+		"version": "1.0.0"
+	},
+
+	"paths": {
+
+    "/shows": {
+      "get": {
+        "summary": "Obter todos os shows",
+        "operationId": "obterTodosOsShows",
+        "tags": ["Shows"],
+        "responses": {
+          "200": {
+            "description": "Lista de shows",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Show"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+
+      "post": {
+        "summary": "Cadastrar um novo show",
+        "operationId": "cadastrarUmNovoShow",
+        "tags": ["Shows"],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Show"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Show cadastrado com sucesso",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Show"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+
+    "/palcos": {
+      "get": {
+        "summary": "Obter todos os palcos",
+        "operationId": "obterTodosOsPalcos",
+        "tags": ["Palcos"],
+        "responses": {
+          "200": {
+            "description": "Lista de palcos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Palco"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "components": {
+    "schemas": {
+      "Show": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "nome do artista que irá tocar" },
+          "description": { "type": "string", "example": "descrição do show" },
+          "type": { "type": "string", "example": "gênero musical" },
+          "startDate": { "type": "string", "example": "data e hora de início" },
+          "endDate": { "type": "string", "example": "data e hora de encerramento" },
+          "location": { "type": "string", "example": "palco onde o show irá acontecer" },
+          "imgUrl": { "type": "string", "example": "https://linkdaimagem.jpg" }
+        }
+      },
+
+      "Palco": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string", "example": "nome do palco" },
+          "location": { "type": "string", "example": "localização do palco" },
+          "history": { "type": "string", "example": "breve descrição da história daquele palco" }
+        }
+      }
+    }
+  }
+}

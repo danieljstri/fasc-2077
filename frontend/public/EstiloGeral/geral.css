@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --green: #00FF00;
+    --pink: #FF00FF;
+    --cyan: #00FFFF;
+    --red: #FF4500;
+    --yellow: #FFD700;
+    --clr-bg: hsl(320, 14%, 8%);
+    --pixo:var(--pink);
+
+    --offpink: #f062f0bd;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Pixo Reto Regular', sans-serif;
+    background-color: var(--pink);
+    color: var(--pink);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1vh 1vw 1vh 1vw;
+}
+
+.caixa{
+    background-color: var(--clr-bg);
+}
+
+@font-face {
+    font-family: 'Cyber Sport';
+    src: url("/frontend/font/Cyber Sport.ttf") format('truetype');
+}
+
+@font-face {
+    font-family:"Pixo Reto Regular";
+    src:url("PixoReto-Regular.eot?") format("eot"),url("PixoReto-Regular.woff") format("woff"),url("PixoReto-Regular.ttf") format("truetype"),url("PixoReto-Regular.svg#PixoReto-Regular") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+@font-face {
+    font-family: "BabaPro";
+    src: url("/frontend/font/BabaPro-Bold.ttf") format("truetype");
+}

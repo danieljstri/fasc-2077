@@ -1,0 +1,31 @@
+{
+  "name": "fasc-2077",
+  "version": "1.0.0",
+  "description": "FASC 2077 (Festival de Artes de São Cristóvão)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node api/server.js",
+    "watch": "node --watch api/server.js",
+    "script": "node script/resetarBanco.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/argologabriel/fasc-2077.git"
+  },
+  "author": "Gabriel Argôlo, Alipio Fernando e Daniel José",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/argologabriel/fasc-2077/issues"
+  },
+  "homepage": "https://github.com/argologabriel/fasc-2077#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "lucide-react": "^0.474.0",
+    "nedb-promises": "^6.2.3",
+    "swagger-ui-express": "^5.0.1",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}

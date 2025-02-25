@@ -1,0 +1,77 @@
+header{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.2%;
+}
+
+
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.2%;
+    background-color: var(--clr-bg);
+    padding: 0 1% 0 1%;
+}
+
+nav a{
+    color: var(--pixo);
+    /* text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor; */
+    font-family: "BabaPro";
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.headerBox{
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navBox{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 2%;
+}
+
+.logoBox{
+    width: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoBox a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10% 10% 10% 10%;
+}
+
+.headerImg{
+    width: 100%;
+    height: 100%;
+}
+
+.headerImg:hover{
+    -webkit-filter: drop-shadow(0 0 10px var(--offpink));
+    filter: drop-shadow(0 0 10px var(--offpink));
+}
