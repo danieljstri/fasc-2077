@@ -11,7 +11,19 @@ function Main() {
       <iframe
         src="/frontpage/index.html" // Caminho do arquivo dentro de public/
         style={{ width: "100%", height: "100%", border: "none" }}
-        title="Palcos"
+        title="Home"
+      />
+    </div>
+  );
+}
+
+function Artistas() {
+  return (
+    <div style={{ width: "100%", height: "100vh" }}>
+      <iframe
+        src="/artistpage/artista.html" // Caminho do arquivo dentro de public/
+        style={{ width: "100%", height: "100%", border: "none" }}
+        title="Artistas"
       />
     </div>
   );
@@ -24,6 +36,7 @@ createRoot(document.getElementById("root")!).render(
         <Route path="/artists" element={<ArtistsView />} />
         <Route path="/" element={<Main />} /> {/* Ajuste aqui */}
         <Route path="/palcos" element={<PalcosView />} />
+        <Route path="/artistas" element={<Artistas />} />
       </Routes>
     </Router>
   </StrictMode>

@@ -11,8 +11,18 @@ export default {
   		},
 		fontFamily: {
 			'offside': ['Offside', 'sans-serif'],
+			cyber: ["Cyber Sport", "sans-serif"],
+        pixo: ["Pixo Reto Regular", "sans-serif"],
+        baba: ["BabaPro", "sans-serif"],
 		},
   		colors: {
+			green: "#00FF00",
+        pink: "#FF00FF",
+        cyan: "#00FFFF",
+        red: "#FF4500",
+        yellow: "#FFD700",
+        "clr-bg": "hsl(320, 14%, 8%)",
+        "offpink": "#f062f0bd",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
